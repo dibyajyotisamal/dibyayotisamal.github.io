@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibyajyoti Samal - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add your CSS styles here */
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        
+        h2 {
+            text-decoration: underline;
+        }
+        
+        .profile-picture {
+            display: inline-block;
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .profile-picture img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .profile-details {
+            display: inline-block;
+            vertical-align: top;
+            max-width: calc(100% - 170px);
+        }
+        
+        .profile-details h1 {
+            font-weight: bold;
+        }
+        
+        .profile-details em {
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Styling the important words */
+        
+        .important {
+            font-weight: bold;
+            color: #ff9900;
+            /* You can use any color you prefer */
+        }
+        
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            text-align: justify;
+        }
+        
+        .section h2 u {
+            text-decoration: underline;
+        }
+        
+        .section p u {
+            text-decoration: underline;
+        }
+        
+        .section ul li {
+            list-style-type: disc;
+        }
+        
+        .section ul li b {
+            font-weight: bold;
+        }
+        
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .project-slider {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .animated-icons {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        
+        .animated-icons li {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .animated-icons li i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        
+        .animated-icons li span {
+            font-size: 18px;
+        }
+        
+        .download-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .disclaimer {
+            text-align: right;
+            font-size: 5px;
+            color: #777;
+        }
+        
+        .weather-info {
+            margin-top: 20px;
+        }
+        
+        .weather-info h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .weather-info p {
+            margin: 5px 0;
+        }
+        /* Image Slider for Project Screenshots (using a dummy image for example) */
+        
+        .project-slider {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Animated Icons for Skills */
+        
+        .animated-icons {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        
+        .animated-icons li {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .animated-icons li i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        
+        .animated-icons li span {
+            font-size: 18px;
+        }
+        /* GitHub Repositories styles 
+        
+        .github-repo {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .github-repo h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .github-repo p {
+            margin: 5px 0;
+        }
+        */
+        /* Weather styles */
+        
+        .weather-info {
+            margin-top: 20px;
+        }
+        
+        .weather-info h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .weather-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="animate-float">
+            <div class="profile-picture">
+                <img src="https://i.ibb.co/ykPYW5Q/profile-pic.png" alt="Dibyajyoti Samal" width="150" height="150">
+            </div>
+            <div class="profile-details">
+                <h1><b>Dibyajyoti Samal</b></h1>
+                <p><em>Email:</em> samaldibyajyoti2012@gmail.com | <em>Phone:</em> +91 8328879235</p>
+                <p><em>LinkedIn:</em> <a style="color:white;" href="https://www.linkedin.com/in/dibyajyoti-samal/" target="_blank">https://www.linkedin.com/in/dibyajyoti-samal/</a></p>
+            </div>
+        </header>
+
+        <!-- Introductory Section -->
+        <div class="section animate-fade-in">
+            <p>
+                <b>Hi, I'm Dibyajyoti Samal,</b> an <span class="important">AI enthusiast</span> and experienced <span class="important">coder</span> with a passion for developing <span class="important">innovative solutions</span>. I have trained in
+                <span class="important">AI model training</span> and <span class="important">coding/programming</span>. Let my <span class="important">achievements</span> and <span class="important">projects</span> speak for themselves.
+            </p>
+        </div>
+
+
+
+
+
+        <!-- Professional Experience Section -->
+        <div class="section animate-fade-in">
+            <h2><u>Professional Experience:</u></h2>
+            <div class="experience1">
+                <p><b>ACCENTURE INDIA</b></p>
+                <p><b>Position:</b> Application Development Associate</p>
+                <p><b>Client:</b> AT&T</p>
+                <p><b>Duration:</b> October 2021 – April 2023</p>
+                <p><b>Technology used:</b> ELK, Nagios, Quantum Metric, Catch Point, Dynatrace</p>
+                <p><b><u>Description:</u></b> IDP Sales is an ATT user application which allows USA customers to buy wireless/Wireline products from ATT.com site. All order requests will go via 'akamai' the traffic lands to ATT firewall, then routed to the
+                    desired data center cluster where we check all customer activity including failure of customer requests or any cluster/Microservices has traffic 100% we will get alerts on respective tools via email.</p>
+                <p><u><b>Responsibilities:</b></u></p>
+                <ul>
+                    <li>Working & resolving real-time customer critical issues.</li>
+                    <li>Level 2 Application Support involving SLA based incident resolution.</li>
+                    <li>Did production support and worked on Break-fix and enhancement work requests.</li>
+                    <li>Communicate with all stakeholders on problem statements, possible solutions, intermediate issues, and overall status of work assigned.
+                    </li>
+                    <li>Analysis of the problem statement and suggest solutions.</li>
+                    <li>Unix file management and shell scripting.</li>
+                    <li>Deliver accurate, thorough and high-quality work.</li>
+                </ul>
+            </div>
+            <div class="experience2">
+                <p><b>Business Development Manager</b></p>
+                <p><b>Position:</b>Web Developer, Graphic Designer, Social Media Manager</p>
+                <p><b>Duration:</b> JAN 2023 - current</p>
+                <p><b>Description:</b>As a versatile freelance professional, I excel in web development, graphic design, social media management, content creation, and copywriting. With a proven track record of delivering exceptional results, I am passionate
+                    about crafting impactful digital experiences and using my creative talents to elevate brands and projects to new heights.
+                </p>
+                <p><u><b>Responsibilities:</b></u></p>
+                <ul>
+                    <li>Spearheaded content creation and regular publication to establish a compelling brand narrative and maintain a consistent online presence.</li>
+                    <li>Devised and implemented innovative strategies to foster organic growth, enhance brand visibility, and cultivate a loyal community of followers.</li>
+                    <li>Conducted thorough market research and competitor analysis to identify trends and opportunities for strategic content positioning.</li>
+                    <li>Monitored and analyzed performance metrics, using data-driven insights to optimize content strategies and drive continuous improvement.</li>
+                    <li>Stayed abreast of industry trends and emerging technologies to stay at the forefront of digital marketing practices.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Academic Profile Section -->
+        <div class="section animate-fade-in academic-profile">
+            <h2>Academic Profile</h2>
+            <ul>
+                <li>
+                    <b>Bachelor of Technology in Electronics & Telecommunication Engineering</b><br> Indira Gandhi Institute of Technology, Sarang (IGIT Sarang)<br> Graduated in 2021<br> CGPA: <span class="important">7.56</span> (out of 10.0)
+                </li>
+                <li>
+                    <b>Higher Secondary Education (Class 12)</b><br> Mother’s Public School, Bhubaneswar<br> Year: 2017<br> Score: <span class="important">70.3%</span>
+                </li>
+                <li>
+                    <b>Secondary Education (Class 10)</b><br> Saint Joseph’s School, Kendrapara<br> Year: 2015<br> Score: <span class="important">81.6%</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ... Rest of the sections with necessary updates ... -->
+
+
+        <!-- Projects Section -->
+        <!-- <div class="section animate-fade-in">
+            <h2>Projects:</h2>
+            <div class="project-slider" id="project-slider">
+                <!-- Add your project screenshots here -->
+        <!-- Example: <img src="project-1.png" alt="Project 1"> -->
+        <!--</div>
+        </div> -->
+
+        <!-- Technical Skills Section -->
+        <div class="section animate-fade-in">
+            <h2>Technical Skills:</h2>
+            <ul class="animated-icons">
+                <li>
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </li>
+                <li>
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </li>
+                <li>
+                    <i class="fab fa-cuttlefish"></i>
+                    <span>C++</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Projects Section-->
+        <div class="section projects-section animate-fade-in">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3 class="project-title">Automatic Breaking and Accident Prevention System</h3>
+                <p class="project-description">
+                    Hardware Used: <span class="important">Arduino UNO</span>, Vibration Sensor, GPS module, GSM module<br> Description: Accidents in highways are in an increasing trend, and as they happen in places away from human settlements, often
+                    goes un-noticed. So, we propose a system which, when connected to a vehicle will warn the driver of approaching objects and inform authorities in case an accident happens.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">Handwritten Character Recognition using CNN</h3>
+                <p class="project-description">
+                    Technologies Used: <span class="important">Python, Sklearn, Keras, Pandas, Matplotlib, Tensorflow</span><br> Description: A system that takes an image as input and returns characters present in it as output. Commonly known as optical
+                    character recognition or OCR. It provides result in real time with an accuracy of 75-80%.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">Library Automation using JAVA</h3>
+                <p class="project-description">
+                    Technologies Used: <span class="important">JAVA</span><br> Description: A system to automate the working of the school library to minimize the time and effort required in doing the work. Features: Browse through all the books available,
+                    categorized according to the genre like, sci-fi, horror, mysteries. Issue books following the guidelines issued by school like, lend duration, issue limit per student. Generate a bill and record the operation.
+                </p>
+            </div>
+
+        </div>
+        <!-- Personal Projects Section -->
+        <div class="section animate-fade-in">
+            <h2>Personal Projects:</h2>
+            <div class="personal-project-item">
+                <h3 class="personal-project-title">Camera app in web</h3>
+                <p class="personal-project-description">
+                    Technologies Used: <span class="important">JavaScript, HTML, CSS</span><br> Description: A website in which we can click pictures and save them to our device just like in-device camera app. We can even apply any of the multiple filters
+                    provided.
+                </p>
+            </div>
+
+            <div class="personal-project-item">
+                <h3 class="personal-project-title">File organizer using python</h3>
+                <p class="personal-project-description">
+                    Technologies Used: <span class="important">Python</span><br> Description: A program to organize a directory filled with numerous files of different varieties into their respective type folder. Features: Categorize files in the directory
+                    in which the code is run into their respective types like audio, video, documents, compressed. It can be modified to categorize the files in whatever way needed.
+                </p>
+            </div>
+        </div>
+
+        <!-- Weather Information -->
+        <div class="section animate-fade-in weather-section">
+            <h2>How is the world treating me:</h2>
+            <div class="weather-info" id="weather-info">
+                <p><b>Location:</b> Loading...</p>
+                <p><b>Temperature:</b> Loading...</p>
+                <p><b>Weather:</b> Loading...</p>
+            </div>
+        </div>
+
+        <!-- Download PDF button -->
+        <button class="download-button" onclick="downloadResumePDF()">Download PDF</button>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">This resume was generated using a long form language AI model.</div>
+    </div>
+
+    <script>
+        // Function to trigger the typing animation on page load
+        function triggerTypingAnimation() {
+            const animateTypingElements = document.querySelectorAll('.animate-typing p');
+            animateTypingElements.forEach((element) => {
+                element.style.animationDelay = (Math.random() * 2).toFixed(1) + 's';
+            });
+        }
+
+        // Trigger the typing animation once the page is fully loaded
+        window.addEventListener('load', () => {
+            triggerTypingAnimation();
+        });
+
+
+        // Floating Effect on Header and Skill Cards
+        const animateFloatElements = document.querySelectorAll('.animate-float');
+        animateFloatElements.forEach(element => {
+            const floatAnimation = () => {
+                const scrollTop = window.scrollY;
+                element.style.transform = `translateY(${scrollTop * 0.3}px)`;
+            };
+
+            window.addEventListener('scroll', floatAnimation);
+        });
+
+        // Image Slider for Project Screenshots (using a dummy image for example)
+        const projectSlider = document.getElementById('project-slider');
+        const projectImages = ['project-1.png', 'project-2.png', 'project-3.png'];
+        let sliderIndex = 0;
+
+        function changeSlide() {
+            projectSlider.innerHTML = `<img src="${projectImages[sliderIndex]}" alt="Project Screenshot">`;
+            sliderIndex = (sliderIndex + 1) % projectImages.length;
+        }
+
+        setInterval(changeSlide, 3000);
+
+        // Animated Icons for Skills
+        const animatedIcons = document.querySelectorAll('.animated-icons li');
+        animatedIcons.forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                icon.querySelector('i').classList.add('animated');
+            });
+
+            icon.addEventListener('mouseout', () => {
+                icon.querySelector('i').classList.remove('animated');
+            });
+        });
+
+        // Fetch GitHub Repositories
+        /* const githubUsername = 'Dibyajyotisamal';
+        const githubReposElement = document.getElementById('github-repos');
+
+        fetch(`https://api.github.com/users/${githubUsername}/repos`)
+            .then(response => response.json())
+            .then(data => {
+                data.slice(0, 5).forEach(repo => {
+                    const repoDiv = document.createElement('div');
+                    repoDiv.classList.add('github-repo');
+                    repoDiv.innerHTML =
+                        `<h3>${repo.name}</h3><p>${repo.description}</p><p>Stars: ${repo.stargazers_count}</p>`;
+                    githubReposElement.appendChild(repoDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching GitHub repositories:', error));
+            */
+        // Fetch Weather Information
+        const weatherApiKey = '0e8f7b797f4f0beb96891b4778f90a67';
+        const weatherInfoElement = document.getElementById('weather-info');
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Rishikesh&appid=${weatherApiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                const weatherDescription = data.weather[0].description;
+                const temperature = (data.main.temp - 273.15).toFixed(1);
+                weatherInfoElement.innerHTML = `<h3>Weather in Rishikesh:</h3><p>${weatherDescription}, ${temperature}°C</p>`;
+            })
+            .catch(error => console.error('Error fetching weather information:', error));
+    </script>
+</body>
+
+</html>
